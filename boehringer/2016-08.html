@@ -8,6 +8,7 @@
   <meta name="description" content="2016中青年医师房颤抗凝先锋项目">
   <meta name="apple-mobile-web-app-capable" content="no">
   <meta content='True' name='HandheldFriendly' />
+  <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
   <style media="screen">
     body {
       margin: 0;
@@ -17,10 +18,43 @@
 </head>
 
 <body>
-  <audio controls="controls" autoplay="autoplay" loop="loop" style="width:100%;margin-bottom:-5px;">
-    <source src="src/music.mp3" type="audio/mp3" /> Your browser does not support this audio format.
-  </audio>
-  <img src="src/boehringer-2016-08-2.jpg" alt="BI" width="100%">
+  <img id="pic" src="src/boehringer-2016-08-2.jpg" alt="BI" width="100%">
+  <script type="text/javascript">
+    (function() {
+      var audio = new Audio('src/music.mp3');
+      audio.load();
+
+      function autoPlayAudio() {
+        wx.config({
+          // 配置信息, 即使不正确也能使用 wx.ready
+          debug: false,
+          appId: '',
+          timestamp: 1,
+          nonceStr: '',
+          signature: '',
+          jsApiList: []
+        });
+        wx.ready(function() {
+          audio.play();
+        });
+      }
+
+      autoPlayAudio();
+
+      // var pic = document.getElementById('pic');
+      // pic.addEventListener('click', function() {
+      //   if (!audio.paused) {
+      //     audio.pause();
+      //   } else {
+      //     audio.play();
+      //   }
+      // });
+      //
+      // triggerClick(pic);
+
+    })();
+
+  </script>
 </body>
 
 </html>
