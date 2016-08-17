@@ -22,6 +22,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/boehringer\/src\/boehringer-2016-08-3.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 246226,
+		"inputAbbreviatedPath": "\/boehringer\/src\/boehringer-2016-08-3.jpg",
+		"outputAbbreviatedPath": "\/boehringer\/src\/boehringer-2016-08-3.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/boehringer\/src\/boehringer-2016-08.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
