@@ -39,18 +39,16 @@
         });
       }
 
-      autoPlayAudio();
+      var pic = document.getElementById('pic');
+      pic.addEventListener('click', function() {
+        if (!audio.paused) {
+          audio.pause();
+        } else {
+          audio.play();
+        }
+      });
 
-      // var pic = document.getElementById('pic');
-      // pic.addEventListener('click', function() {
-      //   if (!audio.paused) {
-      //     audio.pause();
-      //   } else {
-      //     audio.play();
-      //   }
-      // });
-      //
-      // triggerClick(pic);
+      autoPlayAudio();
 
     })();
 
